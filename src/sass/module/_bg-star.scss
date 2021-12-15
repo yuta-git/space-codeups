@@ -1,0 +1,39 @@
+.bg-star {
+  margin-top: rem(-50);
+  position: relative;
+  z-index: -999;
+  overflow-x: clip;
+}
+
+// max-height付ける
+// right 4087
+// left 4972
+.bg-star::before {
+  content: "";
+  position: absolute;
+  top: rem(8);
+  left: 0;
+  background-image: url(../images/common/bg-left.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(630 / 1440 * 100vw);
+  height: calc(4972 / 1440 * 100vw);;
+  z-index: -999;
+  max-height: rem(4972);
+  max-width: rem(630);
+
+}
+.bg-star::after {
+  content: "";
+  position: absolute;
+  top: rem(219);
+  right: rem(-18);
+  background-image: url(../images/common/bg-right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(820 / 1440 * 100vw);
+  height: calc(4087 / 1440 * 100vw);;
+  z-index: -999;
+  max-height: rem(4087);
+  max-width: rem(802);
+}

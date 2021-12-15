@@ -1,0 +1,52 @@
+.about-block {
+  position: relative;
+  color: $text-color;
+  max-width: rem(700);
+  width: 100%;
+}
+
+.about-block__title {
+  font-size: rem(30);
+  font-weight: $bold;
+  line-height: 1;
+}
+.about-block__text {
+  font-size: rem(18);
+  line-height: (30 / 18);
+  font-weight: $normal;
+  margin-top: rem(20);
+}
+
+.about-block__img {
+  position: absolute;
+}
+
+.about-block__img--1 {
+  width: rem(355);
+  left: rem(-496);
+  top: rem(-11);
+  @include mq(img) {
+    left: rem(-440);
+  }
+}
+
+.about-block__img--2 {
+  width: rem(485);
+  right: rem(-513);
+  top: rem(-73);
+}
+
+.about-block__img--3 {
+  width: rem(376);
+  left: rem(-504);
+  top: rem(-49);
+  @include mq(img) {
+    left: rem(-440);
+  }
+}
+
+.about-block__img--4 {
+  width: rem(421);
+  right: rem(-488);
+  top: rem(-23);
+}
